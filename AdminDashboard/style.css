@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  padding: 2em 1em;
+}
+
+.sidebar h2 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main {
+  flex-grow: 1;
+  background: #ecf0f1;
+  overflow-y: auto;
+}
+
+.topbar {
+  background: white;
+  padding: 1em 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  padding: 2em;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
