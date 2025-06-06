@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechFuture 2025 - Budućnost tehnologije</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TechFuture 2025</h1>
+      <nav>
+        <a href="#about">O događaju</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#faq">FAQ</a>
+        <a href="#register">Prijava</a>
+      </nav>
+    </header>
+
+    <section id="about" class="intro">
+      <h2>Dobrodošli na najveću tech konferenciju godine</h2>
+      <p>
+        Otkrijte najnovije inovacije, upoznajte lidere industrije i povežite se
+        sa stručnjacima iz celog sveta.
+      </p>
+      <button
+        onclick="document.getElementById('register').scrollIntoView({behavior: 'smooth'})"
+      >
+        Prijavi se sada
+      </button>
+    </section>
+
+    <section id="gallery">
+      <h2 style="text-align: center">Galerija sa prethodnih događaja</h2>
+      <div class="gallery">
+        <img src="https://picsum.photos/id/1011/400/250" alt="Tech događaj 1" />
+        <img src="https://picsum.photos/id/1012/400/250" alt="Tech događaj 2" />
+        <img src="https://picsum.photos/id/1013/400/250" alt="Tech događaj 3" />
+        <img src="https://picsum.photos/id/1015/400/250" alt="Tech događaj 4" />
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Najčešća pitanja</h2>
+      <details class="faq-item">
+        <summary>Ko može da prisustvuje konferenciji?</summary>
+        <p>
+          Konferencija je otvorena za sve koji su zainteresovani za tehnologiju,
+          uključujući programere, menadžere, studente i entuzijaste.
+        </p>
+      </details>
+      <details class="faq-item">
+        <summary>Kako mogu da se prijavim?</summary>
+        <p>Prijavu možete izvršiti putem forme ispod ili putem našeg sajta.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Da li je ulaz besplatan?</summary>
+        <p>
+          Ulaz je besplatan za studente i rane prijave, dok će ostali plaćati
+          simboličnu kotizaciju.
+        </p>
+      </details>
+    </section>
+
+    <section id="register" class="intro" style="margin-top: 3em">
+      <h2>Prijavite se za događaj</h2>
+      <form
+        style="
+          max-width: 400px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+        "
+      >
+        <input
+          type="text"
+          placeholder="Ime i prezime"
+          required
+          style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc"
+        />
+        <select
+          required
+          style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc"
+        >
+          <option value="" disabled selected>Izaberite tiket</option>
+          <option value="student">Student - Besplatno</option>
+          <option value="regular">Redovan tiket - 5000 RSD</option>
+          <option value="vip">VIP tiket - 12000 RSD</option>
+        </select>
+        <button
+          type="submit"
+          style="
+            padding: 1em;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+          "
+        >
+          Pošalji prijavu
+        </button>
+      </form>
+    </section>
+
+    <section class="social">
+      <h3>Pratite nas na društvenim mrežama</h3>
+      <button onclick="window.open('https://twitter.com/TechFuture', '_blank')">
+        Twitter
+      </button>
+      <button
+        class="instagram"
+        onclick="window.open('https://instagram.com/TechFuture', '_blank')"
+      >
+        Instagram
+      </button>
+      <button
+        class="linkedin"
+        onclick="window.open('https://linkedin.com/company/TechFuture', '_blank')"
+      >
+        LinkedIn
+      </button>
+    </section>
+
+    <footer>&copy; 2025 TechFuture. Sva prava zadržana.</footer>
+  </body>
+</html>

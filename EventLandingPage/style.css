@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fa;
+  color: #333;
+}
+header {
+  background: #007acc;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 0.3em;
+}
+nav {
+  margin-top: 1em;
+}
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+.intro {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.intro button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1.5em;
+}
+.intro button:hover {
+  background: #005f99;
+}
+.gallery {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  padding-bottom: 1em;
+}
+.gallery img {
+  border-radius: 8px;
+  width: 280px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.faq {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.faq h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.faq-item {
+  margin-bottom: 1em;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  outline: none;
+}
+.social {
+  text-align: center;
+  margin-top: 3em;
+}
+.social button {
+  background: #1da1f2;
+  color: white;
+  border: none;
+  padding: 1em 1.8em;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+.social button.instagram {
+  background: #c13584;
+}
+.social button.linkedin {
+  background: #0077b5;
+}
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  font-size: 0.9em;
+  color: #666;
+}
