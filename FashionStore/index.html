@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Fashion Store</h1></header>
+    <nav>
+      <button onclick="filter('all')">Sve</button>
+      <button onclick="filter('muski')">Muški</button>
+      <button onclick="filter('zenski')">Ženski</button>
+    </nav>
+    <section class="products">
+      <div class="product muski"><h3>Muška majica</h3></div>
+      <div class="product zenski"><h3>Ženska bluza</h3></div>
+      <div class="product muski"><h3>Muške pantalone</h3></div>
+    </section>
+    <script>
+      function filter(kategorija) {
+        const proizvodi = document.querySelectorAll(".product");
+        proizvodi.forEach((p) => {
+          p.style.display =
+            kategorija === "all" || p.classList.contains(kategorija)
+              ? "block"
+              : "none";
+        });
+      }
+    </script>
+  </body>
+</html>
