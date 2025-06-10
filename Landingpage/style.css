@@ -1,0 +1,74 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+.header {
+  padding: 5em 2em;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+}
+
+.cta {
+  background: white;
+  color: #2575fc;
+  padding: 1em 2em;
+  display: inline-block;
+  margin-top: 1em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 3em 2em;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature {
+  flex: 1 1 250px;
+  background: #f2f2f2;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.pricing {
+  background: #f9f9f9;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.price-cards {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.card {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 220px;
+}
+
+.highlighted {
+  border: 2px solid #2575fc;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
