@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pro Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">ProDev</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Početna</a></li>
+          <li><a href="#projects">Projekti</a></li>
+          <li><a href="#skills">Veštine</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Marko Jovanović</h1>
+        <p>Full Stack Developer | React | Node.js | UI/UX Dizajn</p>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Istaknuti Projekti</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>CRM Sistem</h3>
+          <p>Kompletan sistem za upravljanje klijentima (React + Node).</p>
+        </div>
+        <div class="card">
+          <h3>E-commerce Shop</h3>
+          <p>Prodavnica sa Stripe integracijom i admin panelom.</p>
+        </div>
+        <div class="card">
+          <h3>Blog CMS</h3>
+          <p>SEO-friendly CMS za blogere, sa Markdown podrškom.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Tehničke Veštine</h2>
+      <ul class="skill-list">
+        <li>HTML5 / CSS3 / SCSS</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Node.js / Express</li>
+        <li>SQL / MongoDB</li>
+        <li>Figma / Adobe XD</li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Kontakt</h2>
+      <form>
+        <input type="text" placeholder="Vaše ime" required />
+        <input type="email" placeholder="Email adresa" required />
+        <textarea placeholder="Vaša poruka" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Marko Jovanović. Sva prava zadržana.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+:root {
+  --bg: #f4f4f4;
+  --accent: #3498db;
+  --dark: #2c3e50;
+  --light: #ffffff;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--light);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  padding: 8em 2em;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.projects,
+.skills,
+.contact {
+  padding: 4em 2em;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.card {
+  background: var(--light);
+  padding: 1.5em;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1em;
+  margin-top: 2em;
+  list-style: none;
+  padding: 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1em;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 1em;
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact button:hover {
+  background: #2d86c5;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: var(--dark);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+  #menu-toggle:checked ~ nav .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
