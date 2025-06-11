@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Marko Jovanović</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Marko Jovanović</h1>
+        <p>Frontend Developer | UI/UX Dizajner</p>
+        <nav>
+          <ul>
+            <li><a href="#about">O meni</a></li>
+            <li><a href="#projects">Projekti</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>O meni</h2>
+        <p>
+          Ja sam web developer sa iskustvom u HTML-u, CSS-u, JavaScript-u i
+          modernim frontend framework-ovima. Fokusiran sam na responzivni dizajn
+          i pristupačnost.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section gray">
+      <div class="container">
+        <h2>Projekti</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Moja lična prezentacija sa kontakt formom i opisima veština.</p>
+          </div>
+          <div class="card">
+            <h3>Online Shop</h3>
+            <p>Web prodavnica sa korpom i plaćanjem putem Stripe API-ja.</p>
+          </div>
+          <div class="card">
+            <h3>Blog Sistem</h3>
+            <p>
+              CMS za blogere sa mogućnošću dodavanja, uređivanja i komentara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Kontaktiraj me</h2>
+        <form>
+          <label for="name">Ime</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Poruka</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Pošalji poruku</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Marko Jovanović. Sva prava zadržana.</p>
+      </div>
+    </footer>
+  </body>
+</html>
