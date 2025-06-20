@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.8;
+  background-color: #fefefe;
+  color: #333;
+}
+header {
+  background-color: #0099cc;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: url("https://picsum.photos/id/1018/1200/400") no-repeat center
+    center/cover;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+article {
+  margin-bottom: 40px;
+}
+article h3 {
+  color: #0099cc;
+}
+.contact {
+  background: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+form input {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+form button {
+  padding: 10px 20px;
+  background: #0099cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
