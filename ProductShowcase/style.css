@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+header {
+  padding: 2rem;
+  background: #1e293b;
+  text-align: center;
+}
+h1 {
+  color: #38bdf8;
+}
+.features {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card h3 {
+  color: #60a5fa;
+}
